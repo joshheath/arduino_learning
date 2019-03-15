@@ -25,3 +25,23 @@ void setup() {
   pinMode(red, OUTPUT);
   pinMode(sound, OUTPUT);
 }
+
+void loop() {
+ for (int thisNote = 0; thisNote < 34; thisNote++){
+   int noteDuration = 1000 / noteDurations[thisNote];
+
+   int pauseBetweenNotes = noteDuration * 0.45;
+   noTone(sound);
+
+  tone(sound, melody[thisNote], noteDuration);
+  digitalWrite(blue, HIGH);
+  delay(pauseBetweenNotes);
+  digitalWrite(blue,LOW);
+  digitalWrite(white, HIGH);
+  delay(pauseBetweenNotes);
+  digitalWrite(white, LOW);
+  digitalWrite(red, HIGH);
+  delay(pauseBetweenNotes);
+  digitalWrite(red, LOW);
+ }
+}
