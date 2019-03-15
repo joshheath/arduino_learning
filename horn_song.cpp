@@ -6,3 +6,10 @@ int melody[] = {
   NOTE_AS4, NOTE_AS4, NOTE_CS5, NOTE_CS5, NOTE_DS5, NOTE_DS5, NOTE_DS5, NOTE_DS5, NOTE_CS5,
   NOTE_DS5, NOTE_DS5, NOTE_CS5, NOTE_CS5, NOTE_AS4, NOTE_AS4, NOTE_AS4
 };
+
+int noteDurations[] = {
+  3,3,3,3,3,3,3,6,6,
+  3,3,3,3,3,3,3,3,
+  3,3,3,3,3,3,3,6,6,
+  3,3,3,3,3,3,1
+};
