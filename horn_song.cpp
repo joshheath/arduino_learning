@@ -45,3 +45,10 @@ void loop() {
   digitalWrite(red, LOW);
  }
 }
+
+void flashing(){
+  digitalWrite(blue, HIGH);
+  delay(160);
+  digitalWrite(blue,LOW);
+  delay(160);
+}
