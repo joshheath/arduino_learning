@@ -13,3 +13,15 @@ int noteDurations[] = {
   3,3,3,3,3,3,3,6,6,
   3,3,3,3,3,3,1
 };
+
+int blue = 13;
+int white = 12;
+int red = 11;
+int sound = 8;
+
+void setup() {
+  pinMode(blue, OUTPUT);
+  pinMode(white, OUTPUT);
+  pinMode(red, OUTPUT);
+  pinMode(sound, OUTPUT);
+}
